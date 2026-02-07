@@ -39,7 +39,8 @@
     "phone_placeholder": "+1 (555) 000-0000",
     "actions": "عملیات",
     "edit": "ویرایش",
-    "delete": "حذف"
+    "delete": "حذف",
+    "logout": "خروج"
   },
   "dashboard": {
     "header_title": "تیکادو",

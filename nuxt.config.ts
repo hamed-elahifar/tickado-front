@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     output: {
       publicDir: "../backend/public",
     },
+    
   },
 
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
@@ -27,9 +28,9 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/dashboard/**': {appLayout: 'dashboard-aside'},
     '/': {appLayout: 'default'},
-    '/auth/**': {appLayout: 'default'}
+    '/auth/**': {appLayout: 'default'},
+    '/dashboard/**': {appLayout: 'dashboard-aside'},
   },
   css: ['~/assets/css/tailwind.css', '~/assets/css/theme.css', 
     '~/assets/css/transition.css', '~/assets/css/inputs.css',
@@ -40,5 +41,8 @@ export default defineNuxtConfig({
     public: {
       apiBase: 'http://srv.informa.ir:3000'
     }
+  },
+  devServer: {
+    host: '10.75.52.183'
   }
 });

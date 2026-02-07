@@ -39,7 +39,8 @@
     "phone_placeholder": "+1 (555) 000-0000",
     "actions": "Actions",
     "edit": "Edit",
-    "delete": "Delete"
+    "delete": "Delete",
+    "logout": "Logout"
   },
   "dashboard": {
     "header_title": "Tikado",
