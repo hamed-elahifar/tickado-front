@@ -1,34 +1,33 @@
 <template>
-    <div class="checkbox-wrapper-6">
-        <input class="tgl tgl-light" id="cb1-6" type="checkbox" :value="value"/>
-        <label class="tgl-btn" for="cb1-6"></label>
-    </div>
+  <div class="checkbox-wrapper-6">
+    <input
+      class="tgl tgl-light"
+      :id="id"
+      type="checkbox"
+      :checked="modelValue"
+      @change="toggle"
+    />
+    <label class="tgl-btn" :for="id"></label>
+  </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
-    value: {
-        type: Boolean,
-        default: false
-    }
-})
-// interface Props {
-//   modelValue?: boolean
-// }
+const props = withDefaults(
+  defineProps<{
+    id: string
+    modelValue?: boolean
+  }>(),
+  {
+    modelValue: false
+  }
+)
 
-// interface Emits {
-//   (e: 'update:modelValue', value: boolean): void
-// }
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: boolean): void
+}>()
 
-// // defineProps<Props>()
-// defineEmits<Emits>()
-
-// const toggleSwitch = () => {
-//   const emit = defineEmits<Emits>()
-//   emit('update:modelValue', !props.modelValue)
-// }
-
-// const props = withDefaults(defineProps<Props>(), {
-//   modelValue: false
-// })
+const toggle = () => {
+  emit('update:modelValue', !props.modelValue)
+}
 </script>
+

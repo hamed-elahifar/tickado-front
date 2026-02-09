@@ -43,6 +43,6 @@ export default defineNuxtConfig({
     }
   },
   devServer: {
-    host: '10.75.52.183'
+    // host: '10.75.52.183'
   }
 });

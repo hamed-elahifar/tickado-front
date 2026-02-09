@@ -33,7 +33,7 @@ const data = ref([
     { title: 'dashboard.user_management', icon: Users, route: '/dashboard/user-managment' },
     { title: 'dashboard.customers', icon: Building2, route: '/dashboard/customers' },
     { title: 'dashboard.partners', icon: UserCog, route: '/dashboard/collabrators' },
-    { title: 'dashboard.questionnaires', icon: FileText, route: '/dashboard/questions' },
+    { title: 'dashboard.questionnaires', icon: FileText, route: '/dashboard/questionnaires' },
     { title: 'dashboard.rewards_lottery', icon: Gift, route: '/dashboard/rewards' },
     { title: 'dashboard.finance', icon: Wallet, route: '/dashboard/finance' },
     { title: 'dashboard.settings', icon: Settings , route: '/dashboard/settings' }

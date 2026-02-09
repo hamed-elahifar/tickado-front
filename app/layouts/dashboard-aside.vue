@@ -34,57 +34,57 @@
       </header>
     
     <section class="flex w-full min-h-screen">
-    <!-- Overlay for Mobile -->
-    <Transition name="fade">
-      <div
-        v-if="isSidebarOpen"
-        @click="isSidebarOpen = false"
-        class="lg:hidden fixed inset-0 bg-black/50 z-40 top-0"
-      />
-    </Transition>
+      <!-- Overlay for Mobile -->
+      <Transition name="fade">
+        <div
+          v-if="isSidebarOpen"
+          @click="isSidebarOpen = false"
+          class="lg:hidden fixed inset-0 bg-black/50 z-40 top-0"
+        />
+      </Transition>
 
-    <!-- Sidebar -->
-    <aside
-      class="
-        fixed lg:static top-0
-        h-screen w-1/6 min-w-56
-        bg-sidebar
-        text-sidebar-foreground
-        flex flex-col
-        z-40
-        transition-transform duration-300 ease-in-out
-        lg:translate-x-0 lg:bg-sidebar lg:p-4
-        overflow-y-auto
-      "
-      :class="[
-        isSidebarOpen 
-          ? 'translate-x-0 rtl:translate-x-0' 
-          : '-translate-x-full rtl:translate-x-full'
-      ]"
-    >
-      <DashboardSideBarHead />
-      <DashboardSideBarMain />
-      <!-- <DashboardSideBarFooter /> -->
-    </aside>
+      <!-- Sidebar -->
+      <aside
+        class="
+          fixed lg:static top-0
+          h-screen w-1/6 min-w-56
+          bg-sidebar
+          text-sidebar-foreground
+          flex flex-col
+          z-40
+          transition-transform duration-300 ease-in-out
+          lg:translate-x-0 lg:rtl:translate-x-0 lg:bg-sidebar lg:p-4
+          overflow-y-auto
+        "
+        :class="[
+          isSidebarOpen 
+            ? 'translate-x-0 rtl:translate-x-0' 
+            : '-translate-x-full rtl:translate-x-full'
+        ]"
+      >
+        <DashboardSideBarHead />
+        <DashboardSideBarMain />
+        <!-- <DashboardSideBarFooter /> -->
+      </aside>
 
-    <!-- Main Content -->
-    <main
-      class="
-        flex-1 w-full
-        min-h-screen
-        flex flex-col
-        px-4 lg:px-5
-        py-4 lg:py-0
-        bg-background
-        text-foreground
-        rounded-lg lg:rounded-none
-        transition-all duration-300
-        overflow-y-auto
-      "
-    >      
-      <div class="lg:hidden h-8" />
-      <slot />
-    </main>
+      <!-- Main Content -->
+      <main
+        class="
+          flex-1 w-full
+          min-h-screen
+          flex flex-col
+          px-4 lg:px-5
+          py-4 lg:py-0
+          bg-background
+          text-foreground
+          rounded-lg lg:rounded-none
+          transition-all duration-300
+          overflow-y-auto
+        "
+      >      
+        <div class="lg:hidden h-8" />
+        <slot />
+      </main>
   </section>
 </template>
 <script setup lang="ts">
