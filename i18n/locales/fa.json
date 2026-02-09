@@ -42,7 +42,10 @@
     "delete": "حذف",
     "logout": "خروج",
     "back": "بازگشت",
-    "save":"ذخیره"
+    "save":"ذخیره",
+    "export_excel": "خروجی اکسل",
+    "title": "عنوان"
+
   },
   "dashboard": {
     "header_title": "تیکادو",
@@ -262,7 +265,34 @@
     "rewards_and_lottery": "پاداش و قرعه‌کشی",
     "new_rule": "قانون جدید",
     "lotteries": "قرعه‌کشی‌ها",
-    "reward_rules": "قوانین پاداش"
+    "reward_rules": "قوانین پاداش",
+    "points": "امتیاز",
+    "includes": "شامل",
+    "credit": "اعتبار",
+    "usage": "میزان استفاده",
+    "search_placeholder": "جستجو...",
+    "rewards_count": "تعداد جوایز",
+    "rule_id": "شناسه قانون",
+    "time_range": "بازه زمانی",
+    "participants": "شرکت‌کنندگان",
+    "no_data": "قانونی یافت نشد",
+    "form": {
+      "activity_title": "عنوان فعالیت",
+      "activity_title_placeholder": "مثلاً تکمیل پرسشنامه",
+      "description": "توضیحات",
+      "description_placeholder": "توضیحات فعالیت را وارد کنید...",
+      "score": "امتیاز",
+      "chance": "شانس",
+      "valid_from": "معتبر از",
+      "valid_to": "معتبر تا",
+      "usage_limit": "محدودیت استفاده",
+      "usage_unlimited": "بدون محدودیت",
+      "active": "فعال",
+      "active_yes": "بله",
+      "active_no": "خیر",
+      "cancel": "انصراف",
+      "submit": "ایجاد"
+    }
   },
   "questionnaires" : {
     "questionnaire_management": "مدیریت پرسشنامه‌ها",

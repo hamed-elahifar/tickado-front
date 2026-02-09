@@ -42,7 +42,9 @@
     "delete": "Delete",
     "logout": "Logout",
     "back": "Back",
-    "save":"Save"
+    "save":"Save",
+    "export_excel": "Export Excel",
+    "title": "Title"
   },
   "dashboard": {
     "header_title": "Tikado",
@@ -262,7 +264,34 @@
     "rewards_and_lottery": "Rewards & Lottery",
     "new_rule": "New Rule",
     "lotteries": "Lotteries",
-    "reward_rules": "Reward Rules"
+    "reward_rules": "Reward Rules",
+    "points": "Points",
+    "includes": "Includes",
+    "credit": "Credit",
+    "usage": "Usage",
+    "search_placeholder": "Search...",
+    "rewards_count": "Rewards Count",
+    "rule_id": "Rule ID",
+    "time_range": "Time Range",
+    "participants": "Participants",
+    "no_data": "No reward rules found",
+    "form": {
+      "activity_title": "Activity Title",
+      "activity_title_placeholder": "e.g. Questionnaire completion",
+      "description": "Description",
+      "description_placeholder": "Add a short description...",
+      "score": "Score",
+      "chance": "Chance",
+      "valid_from": "Valid From",
+      "valid_to": "Valid To",
+      "usage_limit": "Usage Limit",
+      "usage_unlimited": "Unlimited",
+      "active": "Active",
+      "active_yes": "Yes",
+      "active_no": "No",
+      "cancel": "Cancel",
+      "submit": "Create"
+    }
   },
   "questionnaires": {
     "questionnaire_management": "Questionnaire Management",
