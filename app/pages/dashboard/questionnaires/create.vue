@@ -29,11 +29,11 @@
     </div>
 </template>
 <script setup>
-import { ArrowRight, Save } from 'lucide-vue-next';
+import { ArrowRight, Save, Book, FileQuestionMark, BookOpenText } from 'lucide-vue-next';
 const tab = ref('general_information');
 const tabItems = [
-    { id: 'general_information', title: 'questionnaires.general_information' },
-    { id: 'questions', title: 'questionnaires.questions' },
-    { id: 'start_end_page', title: 'questionnaires.start_end_page' },
+    { id: 'general_information', title: 'questionnaires.general_information', icon: Book },
+    { id: 'questions', title: 'questionnaires.questions', icon: FileQuestionMark },
+    { id: 'start_end_page', title: 'questionnaires.start_end_page', icon: BookOpenText },
 ]
 </script>
