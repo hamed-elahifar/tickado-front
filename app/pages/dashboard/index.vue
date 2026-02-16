@@ -1,8 +1,8 @@
 <script setup lang="ts">
+import { onMounted, ref } from 'vue'
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -11,12 +11,26 @@ import {
 import { Button } from '~/components/ui/button'
 import { Plus } from 'lucide-vue-next'
 
-const result = await useClientFetch('/questionnaires')
+const result = ref<{ success: boolean; data?: any[] }>({ success: false, data: [] })
+const pending = ref(true)
+const error = ref<unknown>(null)
+
+onMounted(async () => {
+  try {
+    result.value = await useClientFetch('/questionnaires', 'GET', {})
+  }
+  catch (err) {
+    error.value = err
+  }
+  finally {
+    pending.value = false
+  }
+})
 
 </script>
 
 <template>
-  <div class="py-8" v-if="result.success">
+  <div class="py-8">
      <div class="flex justify-between items-center mb-6">
         <h1 class="text-3xl font-bold tracking-tight">Dashboard</h1>
         <Button @click="navigateTo('/dashboard/create')">
@@ -41,7 +55,7 @@ const result = await useClientFetch('/questionnaires')
               <TableRow v-else-if="error">
                  <TableCell colspan="5" class="text-center text-red-500 h-24">Error loading data</TableCell>
               </TableRow>
-              <TableRow v-else-if="!result.data || result.data?.length === 0">
+              <TableRow v-else-if="!result.data || result.data.length === 0">
                  <TableCell colspan="5" class="text-center h-24">No questionnaires found.</TableCell>
               </TableRow>
               <TableRow v-else v-for="q in result.data" :key="q._id">
@@ -56,8 +70,5 @@ const result = await useClientFetch('/questionnaires')
            </TableBody>
         </Table>
      </div>
-  </div>
-  <div v-else>
-   error happened
   </div>
 </template>

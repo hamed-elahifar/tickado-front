@@ -200,11 +200,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, defineAsyncComponent } from 'vue'
 import { storeToRefs } from 'pinia'
 import { Plus, Eye } from 'lucide-vue-next'
 import QuestionCard from './questions/QuestionCard.vue'
-import multipleChoice from './questions/multiple-choice.vue';
+const multipleChoice = defineAsyncComponent(() => import('./questions/multiple-choice.vue'));
 import { QUESTION_TYPES_META, SPECIAL_PAGES, getQuestionMeta } from './questions/question-types'
 import { useQuestionnaireStore, createQuestion } from '@/stores/questionnaire'
 import type { QuestionType, Question } from '@/stores/questionnaire'

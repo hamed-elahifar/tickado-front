@@ -137,6 +137,7 @@
 <script setup>
 import { QuillEditor } from '@vueup/vue-quill';
 import '@vueup/vue-quill/dist/vue-quill.snow.css';
+import '~/assets/css/quill.css';
 import radio from '~/components/ui/input/radio.vue';
 import toggleButton from './toggle-button.vue';
 import { Plus, Eye, EyeClosed, Grip, X, Smartphone, Monitor } from 'lucide-vue-next';

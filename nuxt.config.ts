@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/tailwind.css', '~/assets/css/theme.css', 
     '~/assets/css/transition.css', '~/assets/css/inputs.css',
-    '~/assets/css/dialog.css', '~/assets/css/quill.css'
+    '~/assets/css/dialog.css'
   ],
   ssr: false,
   runtimeConfig: {

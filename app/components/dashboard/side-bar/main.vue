@@ -16,6 +16,7 @@
               hover:bg-accent hover:text-accent-foreground text-sm"
               :class="{'bg-primary text-primary-foreground': $route.path == item.route}"
               :to="item.route"
+              :prefetch="false"
               >
               <component :is="item.icon" class="size-5" />
               <span class="font-medium">{{$t(item.title)}}</span>
