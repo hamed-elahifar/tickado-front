@@ -4,8 +4,7 @@
       class="tgl tgl-light"
       :id="id"
       type="checkbox"
-      :checked="modelValue"
-      @change="toggle"
+      v-model="inputValue"
     />
     <label class="tgl-btn" :for="id"></label>
   </div>
@@ -22,12 +21,11 @@ const props = withDefaults(
   }
 )
 
-const emit = defineEmits<{
-  (e: 'update:modelValue', value: boolean): void
-}>()
+const emit = defineEmits(['update:modelValue'])
 
-const toggle = () => {
-  emit('update:modelValue', !props.modelValue)
-}
+const inputValue = ref(props.modelValue);
+watch(() => inputValue.value, () => {
+  emit('update:modelValue', inputValue.value)
+})
 </script>
 

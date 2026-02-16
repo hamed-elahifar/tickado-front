@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     
   },
 
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@pinia/nuxt"],
 
   i18n: {
     locales: [
@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/tailwind.css', '~/assets/css/theme.css', 
     '~/assets/css/transition.css', '~/assets/css/inputs.css',
-    '~/assets/css/dialog.css'
+    '~/assets/css/dialog.css', '~/assets/css/quill.css'
   ],
   ssr: false,
   runtimeConfig: {

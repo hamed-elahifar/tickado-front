@@ -1,0 +1,28 @@
+/* محتوای ادیتور */
+.ql-editor {
+  direction: rtl;
+  text-align: right;
+}
+
+/* toolbar */
+.ql-toolbar {
+  direction: rtl;
+  text-align: right;
+}
+
+/* container */
+.ql-container {
+  direction: rtl;
+}
+
+/* dropdown ها */
+.ql-picker-label,
+.ql-picker-options {
+  text-align: right;
+  direction: rtl;
+}
+
+/* align icons fix */
+.ql-align .ql-picker-item[data-value="right"]::before {
+  content: "راست";
+}

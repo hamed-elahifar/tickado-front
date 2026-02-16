@@ -12,7 +12,7 @@
       <Transition name="dialog-content">
         <div
           v-if="isOpen"
-          class="fixed left-[50%] top-[50%] z-50 w-1/2 translate-x-[-50%] translate-y-[-50%]"
+          class="fixed left-[50%] top-[50%] z-50 w-11/12 translate-x-[-50%] translate-y-[-50%]"
         >
           <slot />
         </div>

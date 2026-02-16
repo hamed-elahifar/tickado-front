@@ -44,7 +44,8 @@
     "back": "بازگشت",
     "save":"ذخیره",
     "export_excel": "خروجی اکسل",
-    "title": "عنوان"
+    "title": "عنوان",
+    "user": "کاربر"
 
   },
   "dashboard": {
@@ -338,5 +339,69 @@
     "general_information": "اطلاعات کلی",
     "questions": "سؤالات",
     "start_end_page": "صفحه شروع و پایان"
+  },
+  "lottery": {
+    "new_lottery": "قرعه‌کشی جدید",
+    "title_label": "عنوان قرعه‌کشی",
+    "title_placeholder": "مثلا: قرعه‌کشی عید نوروز",
+    "type_label": "نوع قرعه‌کشی",
+    "single_prize": "تک جایزه",
+    "multi_prize": "چند جایزه",
+    "prizes": "جوایز",
+    "prize_title": "عنوان جایزه",
+    "add_prize": "افزودن جایزه",
+    "required_chance": "شانس مورد نیاز",
+    "user_chance_limit": "محدودیت شانس هر کاربر",
+    "no_limit_placeholder": "بدون محدودیت",
+    "start_date": "تاریخ شروع",
+    "end_date": "تاریخ پایان",
+    "select_date": "انتخاب تاریخ",
+    "active": "فعال",
+    "yes": "بله",
+    "create": "ایجاد",
+    "cancel": "انصراف"
+  },
+  "finance": {
+    "financial_management": "مدیریت مالی",
+    "transactions_and_withdrawals": "تراکنش‌ها و درخواست‌های برداشت",
+    "pending_approval": "در انتظار تایید",
+    "pending_amount": "مبلغ در انتظار",
+    "total_deposits": "کل واریزی‌ها",
+    "total_withdrawals": "کل برداشت‌ها",
+    "transactions": "تراکنش‌ها",
+    "withdrawal_requests": "درخواست‌های برداشت"
+  },
+  "settings": {
+    "identity": "هویت",
+    "security": "امنیت",
+    "banners": "بنرها",
+    "stories": "استوری‌ها",
+    "tickets": "تیکت‌ها",
+    "notifications": "اعلانات",
+    "invite_friends": "دعوت دوستان",
+    "identity_form": {
+      "title": "تنظیمات هویت برند",
+      "subtitle": "لوگو، رنگ سازمانی و متن‌های عمومی را از این بخش مدیریت کنید.",
+      "app_name": "نام اپلیکیشن",
+      "app_name_placeholder": "تیکادو",
+      "brand_color": "رنگ برند",
+      "brand_color_placeholder": "#3b82f6",
+      "brand_color_helper": "رنگ اصلی برند را با کد هگز وارد کنید.",
+      "logo": "لوگو",
+      "upload_logo": "آپلود لوگو",
+      "logo_helper": "فرمت PNG یا JPG تا ۲ مگابایت",
+      "theme": "تم",
+      "theme_placeholder": "انتخاب تم",
+      "theme_light": "روشن",
+      "theme_dark": "تاریک",
+      "address": "آدرس",
+      "address_placeholder": "آدرس دفتر یا محل فعالیت...",
+      "about": "درباره ما",
+      "about_placeholder": "توضیح کوتاه درباره شرکت...",
+      "terms": "قوانین و مقررات",
+      "terms_placeholder": "قوانین، شرایط استفاده و حریم خصوصی...",
+      "save": "ذخیره تنظیمات"
+    }
+    
   }
 }

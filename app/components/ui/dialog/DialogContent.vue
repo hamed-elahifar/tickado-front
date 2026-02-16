@@ -1,6 +1,7 @@
 <template>
   <div
-    class="fixed left-[50%] top-[50%] z-50 w-full max-w-lg translate-x-[-50%] translate-y-[-50%] border border-border bg-background p-6 shadow-lg duration-200 rounded-lg"
+    class="fixed left-[50%] top-[50%] z-50 w-full translate-x-[-50%] translate-y-[-50%] 
+    border border-border bg-background p-6 shadow-lg duration-200 rounded-lg"
     @click.stop
   >
     <button

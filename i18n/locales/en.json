@@ -44,7 +44,8 @@
     "back": "Back",
     "save":"Save",
     "export_excel": "Export Excel",
-    "title": "Title"
+    "title": "Title",
+    "user": "User"
   },
   "dashboard": {
     "header_title": "Tikado",
@@ -337,5 +338,47 @@
     "general_information": "General Information",
     "questions": "Questions",
     "start_end_page": "Start & End Page"
+  },
+  "finance": {
+    "financial_management": "Financial Management",
+    "transactions_and_withdrawals": "Transactions and Withdrawal Requests",
+    "pending_approval": "Pending Approval",
+    "pending_amount": "Amount Pending",
+    "total_deposits": "Total Deposits",
+    "total_withdrawals": "Total Withdrawals",
+    "transactions": "Transactions",
+    "withdrawal_requests": "Withdrawal Requests"
+  },
+  "settings": {
+    "identity": "Identity",
+    "security": "Security",
+    "banners": "Banners",
+    "stories": "Stories",
+    "tickets": "Tickets",
+    "notifications": "Notifications",
+    "invite_friends": "Invite Friends",
+    "identity_form": {
+      "title": "Brand Identity Settings",
+      "subtitle": "Manage logo, brand color, and public-facing texts.",
+      "app_name": "App Name",
+      "app_name_placeholder": "Tickado",
+      "brand_color": "Brand Color",
+      "brand_color_placeholder": "#3b82f6",
+      "brand_color_helper": "Use your primary brand color in hex format.",
+      "logo": "Logo",
+      "upload_logo": "Upload Logo",
+      "logo_helper": "PNG or JPG up to 2 MB",
+      "theme": "Theme",
+      "theme_placeholder": "Select theme",
+      "theme_light": "Light",
+      "theme_dark": "Dark",
+      "address": "Address",
+      "address_placeholder": "Office address...",
+      "about": "About Us",
+      "about_placeholder": "A short description about the company...",
+      "terms": "Terms & Conditions",
+      "terms_placeholder": "Policies, rules, and privacy information...",
+      "save": "Save Settings"
+    }
   }
 }

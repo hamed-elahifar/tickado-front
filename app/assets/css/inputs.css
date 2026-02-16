@@ -30,8 +30,8 @@ background: none;
 .checkbox-wrapper-6 .tgl + .tgl-btn {
 outline: 0;
 display: block;
-width: 4em;
-height: 2em;
+width: 3em;
+height: 1.5em;
 position: relative;
 cursor: pointer;
 -webkit-user-select: none;
