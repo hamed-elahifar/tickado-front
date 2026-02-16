@@ -3,12 +3,12 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
 
-  nitro: {
-    output: {
-      publicDir: "../backend/public",
-    },
+  // nitro: {
+  //   output: {
+  //     publicDir: "/",
+  //   },
     
-  },
+  // },
 
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@pinia/nuxt"],
 
